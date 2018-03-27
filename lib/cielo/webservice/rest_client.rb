@@ -48,7 +48,7 @@ module KCielo
         @https = new_https(uri)
         @req = new_request(method, uri)
         params ? @req.body = params.to_json : @req.body = "{}"
-        logger.log_request(@req, uri)
+        # logger.log_request(@req, uri)
       end
 
       def send_request
@@ -56,10 +56,10 @@ module KCielo
         KCielo.connection_attempts.times do |i|
           begin
             response = @https.request(@req)
-            logger.log_response(response)
+            # logger.log_response(response)
             break unless response.nil?
           rescue Exception => e
-            logger.log "#{e.class}: #{e.message}"
+            # logger.log "#{e.class}: #{e.message}"
           end
         end
         response
@@ -94,7 +94,7 @@ module KCielo
       end
 
       def logger
-        KLog::Log.new
+        # KLog::Log.new
       end
 
       def cert_exist?

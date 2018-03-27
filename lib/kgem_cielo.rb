@@ -6,7 +6,6 @@ require 'securerandom'
 require 'date'
 require 'bigdecimal'
 require 'bigdecimal/util'
-require 'kgem_log'
 require 'json'
 
 require 'helpers/configuration'
@@ -65,8 +64,6 @@ require 'payment/complete_payment_slip'
 require 'payment/simplified_credit_card'
 require 'payment/simplified_debit_card'
 require 'payment/query'
-
-KLog::Log.configuration {|config| config.label = "Cielo Pagador API Rest [#{Time.now}]"}
 
 module KCielo
   extend Configuration
