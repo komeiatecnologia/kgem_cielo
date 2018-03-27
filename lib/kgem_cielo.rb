@@ -8,10 +8,10 @@ require 'bigdecimal'
 require 'bigdecimal/util'
 require 'json'
 
-require 'helpers/configuration'
-require 'helpers/helpers_class'
-require 'helpers/helpers'
-require 'helpers/meta'
+require 'cielo/helpers/configuration'
+require 'cielo/helpers/helpers_class'
+require 'cielo/helpers/helpers'
+require 'cielo/helpers/meta'
 
 require 'cielo/pagador/pagador'
 
@@ -59,11 +59,11 @@ require 'cielo/webservice/simplified_credit_card'
 require 'cielo/webservice/simplified_debit_card'
 require 'cielo/webservice/query'
 
-require 'payment/cancel'
-require 'payment/complete_payment_slip'
-require 'payment/simplified_credit_card'
-require 'payment/simplified_debit_card'
-require 'payment/query'
+require 'cielo/payment/cancel'
+require 'cielo/payment/complete_payment_slip'
+require 'cielo/payment/simplified_credit_card'
+require 'cielo/payment/simplified_debit_card'
+require 'cielo/payment/query'
 
 module KCielo
   extend Configuration

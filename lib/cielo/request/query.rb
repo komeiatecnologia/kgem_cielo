@@ -1,6 +1,5 @@
 module KCielo
   module Request
-    #require 'helpers/helpers'
     class Query
       include KCielo::Helpers
 
