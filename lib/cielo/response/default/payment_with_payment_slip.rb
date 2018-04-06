@@ -5,7 +5,7 @@ module KCielo
       class PaymentWithPaymentSlip < KCielo::Response::Default::Payment
         attr_reader :instructions, :expiration_date, :url, :number, :bar_code_number
         attr_reader :digitable_line, :assignor, :address, :identification
-        attr_reader :payment_id, :reason_code, :reason_message, :links
+        attr_reader :payment_id, :reason_code, :reason_message, :links, :return_code
 
         def initialize(hash)
           super(hash)
@@ -21,8 +21,8 @@ module KCielo
           @reason_code = hash['ReasonCode']
           @reason_message = hash['ReasonMessage']
           @links = KCielo::Response::Default::Link.build_array(hash['Links'])
+          @return_code = hash['ReturnCode']
         end
-
       end
     end
   end
