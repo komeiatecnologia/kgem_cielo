@@ -153,10 +153,13 @@ module KCielo
       '57' => 'Transação não permitida',
       '60' => 'Transação não autorizada',
       '62' => 'Transação não autorizada',
+      '70' => 'Problemas com o Cartão de Crédito',
+      '77' => 'Cartão cancelado',
       '78' => 'Cartão não foi desbloqueado',
       '82' => 'Erro no cartão',
       '91' => 'Banco fora do ar',
-      '96' => 'Tente novamente'
+      '96' => 'Tente novamente',
+      '99' => 'Time out'
     }
 
     protected
