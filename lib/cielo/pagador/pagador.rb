@@ -136,6 +136,29 @@ module KCielo
       319 => "Recorrência inteligente não está ativa"
     }
 
+    RETURN_CODE_MESSAGE = {
+      '04' => 'Transação não autorizada',
+      '05' => 'Transação não autorizada',
+      '06' => 'Tente novamente',
+      '07' => 'Cartão com restrição',
+      '08' => 'Código de segurança inválido',
+      '11' => 'Transação autorizada',
+      '13' => 'Valor inválido',
+      '14' => 'Cartão inválido',
+      '15' => 'Banco emissor indisponível',
+      '21' => 'Cancelamento não efetuado',
+      '41' => 'Cartão com restrição',
+      '51' => 'Saldo insuficiente',
+      '54' => 'Cartão vencido',
+      '57' => 'Transação não permitida',
+      '60' => 'Transação não autorizada',
+      '62' => 'Transação não autorizada',
+      '78' => 'Cartão não foi desbloqueado',
+      '82' => 'Erro no cartão',
+      '91' => 'Banco fora do ar',
+      '96' => 'Tente novamente'
+    }
+
     protected
     def credit_card_paid?(status)
       status == 2

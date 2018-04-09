@@ -88,8 +88,9 @@ module KCielo
 
         def reason_message
           code = @payment.reason_code
+          return_code = @payment.return_code
           return REASON_MESSAGE[code] if REASON_MESSAGE.key? code
-          "#{code} - #{REASON_MESSAGE[code]}"
+          RETURN_CODE_MESSAGE[return_code] if @payment.status != 2 && (RETURN_CODE_MESSAGE.key? code)
         end
 
         def provider_message
