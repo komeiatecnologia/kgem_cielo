@@ -159,7 +159,8 @@ module KCielo
       '82' => 'Erro no cartão',
       '91' => 'Banco fora do ar',
       '96' => 'Tente novamente',
-      '99' => 'Time out'
+      '99' => 'Time out',
+      'KE' => 'Transação não autorizada'
     }
 
     protected
