@@ -137,6 +137,7 @@ module KCielo
     }
 
     RETURN_CODE_MESSAGE = {
+      '002' => 'Credenciais invalidas',
       '04' => 'Transação não autorizada',
       '05' => 'Transação não autorizada',
       '06' => 'Tente novamente',
